@@ -1,6 +1,11 @@
 body{
+<<<<<<< Updated upstream
     background-image: url('images/wallpapertip_wallpaper-minimalism_810819.jpg');
     /* height: 100%; */
+=======
+    background-image: url('images/pexels-roberto-shumski-1903702.jpg');
+    height: 50%;
+>>>>>>> Stashed changes
     background-color: #1f1f1f;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,28 +91,29 @@ p2{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.795); /* Black w/ opacity */
+    backdrop-filter: blur(8px);
+    animation-name: account_panel;
+    animation-duration: 1s;
   }
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #696969b9;
+    background-color: #ffffff;
     border-radius: 25px;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    color: rgb(255, 255, 255);
+    color: rgb(70, 70, 70);
     font-weight: 200;
     font-size: 30;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px #000000;
   }
   
   /* The Close Button */
   .close {
-    color: rgba(255, 255, 255, 0.637);
+    color: rgba(0, 0, 0, 0.637);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -119,3 +125,8 @@ p2{
     text-decoration: none;
     cursor: pointer;
   }
+
+@keyframes account_panel {
+    from {backdrop-filter: blur(1px);}
+    to {backdrop-filter: blur(8px);}
+}

@@ -23,3 +23,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//Account creating!
+var First = document.getElementById("First");
+
+var Last = document.getElementById("Last");
+
+var Phone = document.getElementById("Phone");
+
+var Check = document.getElementById("Check");
