@@ -1,0 +1,4 @@
+[ADDED] - New navigationbar animations
+[ADDED] - New reload animations
+[ADDED] - Logo to the main page
+[ADDED] - Icon for the website
