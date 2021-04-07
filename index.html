@@ -2,14 +2,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/SP.png" type="image/icon type">
 
-    <body>
+    <body onload="loadTop()">
         <title>Skypixel Official</title>
         <div class="bg-image"></div>
         <div>
             <ul>
                 <li><a href="pages/projects/projects.html">PROJECTS</a></li>
-                <li><a href="pages/downloads/downloads.html">DOWNLOADS</a></li>
-                <li style="float:right"><a class="active" href="index.html" class="login">LOGIN</a></li>
+
+                <li><a href="pages/404/index.html">SOCIALMEDIA</a></li>
+
+                <li style="float:right"><a href="#" class="active" id="demo" onclick="myFunction()">LOGIN</a></li>
             </ul>
             <img class="main_logo" src="images/7a29d3f8bffa72e3bd275751cf701d31_2_3_art.png">
         </div>
@@ -25,6 +27,6 @@
         </object>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <button onclick="topFunction()" id="myBtn" title="Jump to the top of the site!">▲</button>
     <script src="javascript.js"></script>
 </html>

@@ -34,13 +34,18 @@ body{
 }
 
 .main_logo{
+  position: absolute;
   animation-name: main_logo_animation;
   animation-duration: 1.5s;
   width: 156px;
   height: 156px;
-  position: absolute;
-  top: 80px;
-  left: 550px;
+  top: 10%;
+  left: 45%;
+}
+
+.main_logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @keyframes main_logo_animation {
@@ -49,9 +54,10 @@ body{
 }
 
 ul {
+  position: absolute;
   list-style-type: none;
-  margin: 250;
-  top: 5%;
+  top: 30%;
+  left: 25%;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -59,7 +65,6 @@ ul {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
   font-size: 20;
-  left: 60px;
   box-shadow: 0px 0px 15px #000000;
 }
 
@@ -152,8 +157,4 @@ body{
 
 #myBtn:hover {
   background-color: rgb(37, 90, 238); /* Add a dark-grey background on hover */
-}
-
-.login{
-  
 }
