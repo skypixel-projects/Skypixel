@@ -45,7 +45,7 @@ function loginButton() {
         setTimeout(
           function() {
             document.getElementById("demo").innerHTML = "LOGIN";
-            window.location.href = 'pages/404/index.html'
+            window.location.href = 'pages/developers/index.html'
         }, 5000);
       } else {
         document.getElementById("demo").innerHTML = "Declined";
