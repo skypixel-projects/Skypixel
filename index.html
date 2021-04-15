@@ -1,4 +1,4 @@
-<html>
+<html onscroll="scrollBackground()">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/SP.png" type="image/icon type">
 
@@ -7,27 +7,35 @@
         <div class="bg-image"></div>
         <div>
             <ul>
-                <li><a href="pages/404/index.html" title="Click here to view all the projects!">PROJECTS</a></li>
+                <li>
+                    <a href="pages/404/index.html" title="Click here to view all the jobs!">JOBS</a>
+                </li>
 
                 <li><a href="pages/404/index.html" title="Click here to view all the socialmedias!">SOCIALMEDIA</a></li>
 
                 <li style="float:right"><a href="#" class="active" title="Click here to login to the site!" id="demo" onclick="loginButton()">LOGIN</a></li>
             </ul>
-            <img class="main_logo" title="Welcome to the official skypixel website!" src="images/7a29d3f8bffa72e3bd275751cf701d31_2_3_art.png">
+            <img class="main_logo" onclick="mainLogoClick()" title="Welcome to the official skypixel website!" src="images/7a29d3f8bffa72e3bd275751cf701d31_2_3_art.png">
         </div>
     </body>
     <div>
         <object class="main_panel">
-            <!-- Aici trebuie sa introduc textul pentru main panel -->
-            <h1></h1>
-            <object class="member_panel">
-                <!-- Aici trebuie sa introduc textul pentru member panel -->
-                <iframe src="https://discord.com/widget?id=771252294267699210&theme=light" width="518" height="800" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </object>
+            <h1 class="main_panel_text">PROJECTS IN WORKING</h1>
         </object>
     </div>
 
+    <!-- Aici este chatbox model! -->
+    <div class="chat">
+        <p id="sended"></p>
+        <textarea id="textbax" class="chat_testarea_send" name="w3review" rows="2" cols="35"></textarea>
+        <button onclick="sendMessage()" class="chat_button_send">SEND</button>
+    </div>
+
     <button onclick="topFunction()" id="myBtn" title="Jump to the top of the site!">☝️</button>
-    <div class="bottom-left" onclick="chatBox()"><img class="bottom-left-image" title="Leave us a message!" src="images/icons8-chat-96 (1).png"></div>
+    <div class="bottom-left" onclick="chatBox()">
+        <img class="bottom-left-image" title="Leave us a message!" src="images/icons8-chat-96 (1).png">
+    </div>
+
+    <!-- Aici sunt scripturile conectate cu html-ul -->
     <script src="javascript.js"></script>
 </html>

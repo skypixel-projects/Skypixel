@@ -171,6 +171,7 @@ div{
     position: absolute;
     padding: 50px;
     margin: 220px;
+    align-self: start;
 
     top: -10%;
     left: 0px;

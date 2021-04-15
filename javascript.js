@@ -1,14 +1,12 @@
-//Get the button:
 mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(), scrollBackground()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    mybutton.style.opacity = '100%';
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.opacity = '0%';
   }
 }
 
@@ -67,18 +65,55 @@ function loadTop() {
   }, 100);
 }
 
+
 // Aici este script-ul pentru butonul de chat!
 function chatBox() {
-  console.log('The mesaje box has been executed!')
-  var txt;
-  if (confirm(`Our website is not ready yet! Do you want to close this page?`)) {
-    window.location.href = 'index.html'
+  const html = document.querySelector('.chat');
+  if (html.style.opacity == 0) {
+    html.style.opacity  = '100%';
+    html.style.top = '47%'
+    html.style.padding = '10%'
+    // padding: 10%;
   } else {
-    window.location.href = 'pages/404/index.html'
+    html.style.opacity  = '0%';
+    html.style.top = '100%'
+    html.style.padding = '0px'
+    // padding: 10%;
   }
-  document.getElementById("demo").innerHTML = txt;
-  setTimeout(
-    function() {
-      window.location.href = 'pages/404/index.html'
-  }, 100);
+}
+
+function sendMessage() {
+  var x = document.getElementById("textbax").value;
+  document.getElementById("sended").innerText += 'ADMIN - ' + x;
+}
+
+// function scrollBackground() {
+//   const html1 = document.querySelector('html');
+//   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+//     html1.style.backgroundImage = "url('images/tumblr_226484df357757565ded83f4155a58b2_b04a6978_1280.gif')"
+//   } else {
+//     html1.style.backgroundImage = "url('images/854183.jpg')"
+//   }
+// }
+
+function mainLogoClick() {
+  const panel = document.querySelector('.main_panel');
+  const logo = document.querySelector('.main_logo');
+  const html = document.querySelector('html');
+  const navigationbar = document.querySelector('ul');
+  if (panel.style.opacity == 0) {
+    panel.style.opacity  = '100%';
+    panel.style.top = '40%';
+    panel.style.height = '500%';
+    logo.style.top = "10%";
+    navigationbar.style.top = "30%";
+    html.style.backgroundImage = "url('images/854183.jpg')"
+  } else {
+    panel.style.opacity  = '0%';
+    panel.style.top = '100%';
+    panel.style.height = '0px';
+    logo.style.top = "35%";
+    navigationbar.style.top = "55%";
+    html.style.backgroundImage = "url('images/tumblr_226484df357757565ded83f4155a58b2_b04a6978_1280.gif')"
+  }
 }
