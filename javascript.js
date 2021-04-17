@@ -85,6 +85,10 @@ function chatBox() {
 function sendMessage() {
   var x = document.getElementById("textbax").value;
   document.getElementById("sended").innerText += 'ADMIN - ' + x;
+  setTimeout(
+    function() {
+      document.getElementById("sended").innerText = ''
+  }, 1500);
 }
 
 // function scrollBackground() {
@@ -96,6 +100,20 @@ function sendMessage() {
 //   }
 // }
 
+function webMode() {
+  if(document.getElementById("webmode").innerText === 'Light Mode') {
+    const panel = document.querySelector('.main_panel');
+    panel.style.color = 'white'
+
+    document.getElementById("webmode").innerHTML = "Dark Mode";
+  } else {
+    const panel = document.querySelector('.main_panel');
+    panel.style.color = 'black'
+
+    document.getElementById("webmode").innerHTML = "Light Mode";
+  }
+}
+
 function mainLogoClick() {
   const panel = document.querySelector('.main_panel');
   const logo = document.querySelector('.main_logo');
@@ -106,6 +124,8 @@ function mainLogoClick() {
     panel.style.top = '40%';
     panel.style.height = '500%';
     logo.style.top = "10%";
+    logo.style.opacity = '100%';
+    navigationbar.style.opacity = '100%';
     navigationbar.style.top = "30%";
     html.style.backgroundImage = "url('images/854183.jpg')"
   } else {
@@ -113,7 +133,9 @@ function mainLogoClick() {
     panel.style.top = '100%';
     panel.style.height = '0px';
     logo.style.top = "35%";
+    logo.style.opacity = '60%';
     navigationbar.style.top = "55%";
+    navigationbar.style.opacity = '35%';
     html.style.backgroundImage = "url('images/tumblr_226484df357757565ded83f4155a58b2_b04a6978_1280.gif')"
   }
 }

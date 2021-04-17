@@ -206,6 +206,13 @@ body{
   left: 2%;
 }
 
+.main_panel_text-2{
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 2%;
+  top: 1%;
+}
+
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -216,8 +223,8 @@ body{
 }
 
 .chat{
-  transition: 0.8s;
-  position: absolute;
+  transition: 0.3s;
+  position: fixed;
   opacity: 0%;
   background-color: white;
   box-shadow: 0px 0px 8px #000000a8;
