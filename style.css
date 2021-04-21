@@ -203,11 +203,13 @@ body{
 .main_panel_text{
   position: absolute;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: #333;
   left: 2%;
 }
 
 .main_panel_text-2{
   position: absolute;
+  text-shadow: #333;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   left: 2%;
   top: 1%;
@@ -257,4 +259,16 @@ body{
   resize: none;
   top: 82%;
   left: 5%;
+}
+
+.webmode{
+  padding: 5px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
 }

@@ -101,16 +101,16 @@ function sendMessage() {
 // }
 
 function webMode() {
-  if(document.getElementById("webmode").innerText === 'Light Mode') {
+  if(document.getElementById("webmode").innerText === 'LIGHT MODE') {
     const panel = document.querySelector('.main_panel');
     panel.style.color = 'white'
 
-    document.getElementById("webmode").innerHTML = "Dark Mode";
+    document.getElementById("webmode").innerHTML = "DARK MODE";
   } else {
     const panel = document.querySelector('.main_panel');
     panel.style.color = 'black'
 
-    document.getElementById("webmode").innerHTML = "Light Mode";
+    document.getElementById("webmode").innerHTML = "LIGHT MODE";
   }
 }
 
