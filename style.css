@@ -1,4 +1,5 @@
 html{
+  overflow-x: hidden;
   animation-name: loading_html;
   animation-duration: 0.8s;
   background-image: url('images/854183.jpg');
@@ -235,8 +236,6 @@ body{
   padding: 0px;
   margin: 100px;
   border-radius: 20px 20px 20px 0px;
-  top: 100%;
-  left: -4%;
 }
 
 .chat_button_send{

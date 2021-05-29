@@ -71,8 +71,9 @@ function chatBox() {
   const html = document.querySelector('.chat');
   if (html.style.opacity == 0) {
     html.style.opacity  = '100%';
-    html.style.top = '47%'
-    html.style.padding = '10%'
+    html.style.top = '370px'
+    html.style.left = '-50px'
+    html.style.padding = '180px'
     // padding: 10%;
   } else {
     html.style.opacity  = '0%';
